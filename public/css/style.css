@@ -1,0 +1,1011 @@
+@import url("hover-min.css");
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #CCD4DD;
+    --text-color: #141E1D;
+    --border-color: 1px solid #446063;
+    --hover-color: #5E999D;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url("../fonts/Comfortaa-Regular.ttf");
+}
+
+/* Start Admin */
+.login-admin,
+.register-admin {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    border: var(--border-color) !important;
+}
+
+.admin-wait,
+.admin-side {
+    text-align: center;
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    border: var(--border-color) !important;
+}
+
+.left-side-items {
+    padding-left: 50px;
+    color: var(--text-color) !important;
+}
+.login-button,
+.register-button{
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: var(--border-color);
+}
+.users-table {
+    color: var(--text-color) !important;
+    border: 2px solid #141E1D;
+    margin: 50px auto;
+}
+
+.admin_actions a {
+    text-decoration: none;
+    padding-right: 25px;
+    color: var(--text-color) !important;
+}
+.user-create {
+    margin-top: 20px;
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+/* End Admin */
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.nav-profile {
+    color: var(--text-color) !important;
+}
+
+.nav-profile-options {
+    background-color: var(--background-color)
+}
+
+.nav-profile-options .dropdown-item {
+    color: var(--text-color);
+}
+
+.nav-profile-options .dropdown-item:hover {
+    color: var(--hover-color);
+    background-color: transparent;
+}
+
+/* Start Switch Color */
+
+.style-switch,
+.style-switch .button span {
+    position: relative;
+}
+
+.style-switch .button,
+.style-switch .sun,
+.style-switch .moon,
+.style-switch .moon2 {
+    position: absolute;
+}
+
+.style-switch .sun {
+    top: 20px;
+    left: 1005px;
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(180deg, #ffdc2a 0%, #ffdc2a 41.54%);
+    z-index: 2;
+    border-radius: 65px;
+    transition: all 1s ease-in-out;
+}
+
+.style-switch:hover .sun {
+    top: 0;
+    transition: all .7s ease-in-out;
+    box-shadow: 0 0 10px #ffdc2a;
+}
+
+.style-switch .moon {
+    border-radius: 50%;
+    box-shadow: 25px 0 var(--background-color) inset;
+    transform: rotateZ(-35deg);
+    top: 20px;
+    left: 1005px;
+    width: 55px;
+    height: 55px;
+    z-index: 2;
+    transition: all .7s ease-in-out;
+}
+
+.style-switch:hover .moon {
+    top: 80px;
+    transition: all .7s ease-in-out;
+    box-shadow: 25px 0 var(--text-color) inset, -15px 0 20px #FFF;
+}
+
+.style-switch .moon2 {
+    border-radius: 50%;
+    left: 25px;
+    background: transparent;
+    width: 55px;
+    height: 55px;
+    z-index: 2;
+    transition: all .7s ease-in-out;
+}
+
+.style-switch:hover .moon2 {
+    transition: all .7s ease-in-out;
+}
+
+.style-switch .button {
+    text-align: center;
+    background: transparent;
+    top: 20px;
+    left: 990px;
+    width: 82px;
+    height: 56px;
+    border-radius: 10px;
+    z-index: 3;
+    transition: all .7s ease-in-out;
+}
+
+.style-switch:hover .button {
+    transition: all .7s ease-in-out;
+}
+
+.style-switch .button span {
+    font-size: 24px;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+    background: -webkit-linear-gradient(var(--text-color), #9e8a79);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* End Switch Colors */
+
+/* Start Post Show */
+.jumbotron h1 {
+    color: var(--text-color);
+}
+
+.jumbotron .create {
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    color: var(--background-color);
+}
+
+.content_row {
+    padding-top: 5%;
+}
+
+.custom_card {
+    max-width: 1116px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: var(--border-color);
+}
+
+.custom_dropdown {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: var(--border-color);
+    border-radius: unset;
+}
+
+.custom_dropdown {
+    background-color: transparent;
+}
+
+.custom_dropdown .edit {
+    background-color: var(--background-color);
+}
+
+.custom_dropdown .trash {
+    background-color: var(--background-color);
+}
+
+.custom_dropdown .report {
+    background-color: var(--background-color);
+}
+
+.custom_dropdown .edit:hover {
+    color: var(--hover-color);
+}
+
+.custom_dropdown .trash:hover {
+    color: var(--hover-color);
+}
+
+.custom_dropdown .report:hover {
+    color: var(--hover-color);
+}
+
+.post_image {
+    padding-right: 10px;
+}
+
+.post_image img {
+    padding-top: 3.5%;
+    padding-bottom: 1%;
+}
+
+.custom_time {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.post_content {
+    padding-left: 3%;
+}
+
+.post_content h5 {
+    padding-top: 30px;
+}
+
+.post_content h5 a {
+    text-decoration: underline var(--text-color);
+    color: var(--text-color);
+}
+
+.post_content h5 a:hover {
+    text-shadow: 0 0 3px #999;
+}
+
+.user_actions {
+    padding: 20px;
+    margin-left: 35%;
+    text-align: center;
+}
+
+.user_actions a {
+    margin-left: 5%;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s ease-out;
+}
+
+.user_actions .like:hover {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.user_actions .comment:hover {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.user_actions .share:hover {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.post {
+    display: flex;
+    color: inherit;
+    position: relative;
+    padding: 2rem;
+    box-shadow: inset 0 0 0 1px #446063;
+    background-color: transparent;
+}
+
+.post:before {
+    position: absolute;
+    color: var(--background-color);
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform-origin: 0 bottom 0;
+    transform: scaleX(0);
+    transition: 0.2s ease-in-out;
+}
+
+.post:hover .post-title {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.post:hover:before {
+    transform: scaleX(1);
+}
+
+.post-title {
+    position: relative;
+    font-size: 16px;
+}
+
+.post_content .profile {
+    display: block;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 8px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: var(--background-color);
+    background: #ffffff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.post_content .profile:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.post_content .profile:active {
+    color: var(--text-color)
+}
+
+.post_content .profile:active:after {
+    background: transparent;
+}
+
+.post_content .profile:hover:before {
+    opacity: 1;
+}
+
+.post_content .profile:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--text-color);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.no-posts {
+    width: 13%;
+    margin: 0 auto;
+    text-align: center;
+}
+.no-categories {
+    width: 15%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* End Post Show */
+
+/* Start Show Single Post */
+.show-post .jumbotron {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.show-post .jumbotron h1 {
+    margin-left: 40px;
+    color: var(--text-color);
+}
+
+.show-post .jumbotron h1:hover {
+    text-shadow: 10px 10px 10px #394D5F;
+}
+
+.show-post .jumbotron .report {
+    float: right;
+    clear: both;
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.show-post .jumbotron .report:hover {
+    color: var(--hover-color);
+}
+
+.show-post .post {
+    margin: 50px auto;
+    color: var(--text-color);
+}
+
+.show-post .image {
+    margin: 50px auto;
+    border: var(--border-color);
+}
+
+.show-post .image img {
+    margin: auto;
+}
+
+.show-post .card-text {
+    float: right;
+    margin: 10px;
+    color: #394D5F;
+}
+
+.show-post .user_actions {
+    margin-left: 0;
+}
+
+/* End Show Single Post */
+
+/* Start Brand */
+svg {
+    position: absolute;
+    top: -4000px;
+    left: -4000px;
+}
+
+#gooey-button {
+    text-decoration: none;
+    padding: 1rem;
+    border: none;
+    color: var(--background-color);
+    filter: url("#gooey");
+    position: relative;
+    background-color: var(--text-color);
+}
+
+#gooey-button:focus {
+    outline: none;
+}
+
+#gooey-button .bubbles {
+    position: absolute;
+    top: 0;
+    left: -13px;
+    bottom: 0;
+    right: 0;
+}
+
+#gooey-button .bubbles .bubble {
+    background-color: var(--text-color);
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+}
+
+#gooey-button .bubbles .bubble:nth-child(1) {
+    left: 39px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-1 3.02s infinite;
+    animation: move-1 3.02s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(2) {
+    left: 53px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-2 3.04s infinite;
+    animation: move-2 3.04s infinite;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(3) {
+    left: 55px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-3 3.06s infinite;
+    animation: move-3 3.06s infinite;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(4) {
+    left: 38px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-4 3.08s infinite;
+    animation: move-4 3.08s infinite;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(5) {
+    left: 30px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-5 3.1s infinite;
+    animation: move-5 3.1s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(6) {
+    left: 13px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-6 3.12s infinite;
+    animation: move-6 3.12s infinite;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(7) {
+    left: 54px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-7 3.14s infinite;
+    animation: move-7 3.14s infinite;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(8) {
+    left: 28px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-8 3.16s infinite;
+    animation: move-8 3.16s infinite;
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(9) {
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-9 3.18s infinite;
+    animation: move-9 3.18s infinite;
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(10) {
+    left: 39px;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: move-10 3.2s infinite;
+    animation: move-10 3.2s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes move-1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 168px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 168px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 97px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 97px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 146px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 146px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-4 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 166px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-4 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 166px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-5 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 159px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-5 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 159px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-6 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 151px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-6 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 151px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-7 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 117px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-7 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 117px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-8 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 140px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-8 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 140px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-9 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 143px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-9 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 143px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-10 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 113px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes move-10 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    99% {
+        transform: translate(0, 113px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+/* End Brand */
+
+/* Start Profile And Create Post Forms */
+.create-jumb,
+.edit-jumb,
+.index-jumb {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.create-jumb h1,
+.edit-jumb h1,
+.index-jumb h1 {
+    color: var(--text-color);
+}
+
+.profile-form,
+.post-form,
+.edit-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.profile-form label,
+.post-form label,
+.edit-form label {
+    color: var(--text-color);
+}
+
+.profile-form span,
+.post-form span,
+.edit-form span {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: var(--border-color);
+}
+
+.profile-form input,
+.post-form input,
+.edit-form input {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: var(--border-color);
+}
+
+.profile-form textarea,
+.post-form textarea,
+.edit-form textarea {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: var(--border-color);
+}
+
+.profile-form .form-select {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: var(--border-color);
+}
+
+.profile-form .form-select option {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.profile-form .update-button,
+.post-form .post-button,
+.edit-form .update-button {
+    margin-left: 40%;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: var(--border-color);
+}
+
+.index-jumb .create {
+    color: var(--text-color);
+    margin-top: 20px;
+    background-color: var(--background-color);
+    border: var(--border-color);
+}
+
+.profile-form .update-button:hover,
+.post-form .post-button:hover,
+.edit-form .update-button:hover {
+    color: #394D5F;
+    background-color: var(--background-color);
+    border: var(--border-color);
+}
+
+/* End Profile And Create Post Forms */

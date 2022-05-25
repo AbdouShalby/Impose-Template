@@ -1,0 +1,8 @@
+/* Start Category */
+.pagination {
+    font-size: 20px;
+}
+.pagination .active {
+    color: #db4437;
+}
+/* End Category */
